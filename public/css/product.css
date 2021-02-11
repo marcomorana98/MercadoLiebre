@@ -1,0 +1,128 @@
+.product-section .product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 100%;
+  padding: 20px;
+}
+
+.product-background {
+  background-color: #fff;
+}
+
+.product .price {
+  font-size: 18px;
+}
+.product .discount {
+  flex-grow: 0.9;
+}
+
+.product .discount,
+.product .description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.product .description {
+  color: transparent;
+  transition: 1s;
+}
+
+.product img {
+  width: 100%;
+}
+
+.truck-icon,
+.discount {
+  color: #39b54a;
+}
+
+.truck-icon {
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: 1s;
+}
+
+.product .main-article {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  position: relative;
+}
+
+.price-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#burger-menuy i{
+  margin-top: 30px;
+}
+.nav-list{
+    display:none;
+  }
+.nav-ing{
+    display:none;
+  }
+@media (min-width: 780px) {
+  .nav-list{
+    display:initial;
+  }
+  #burger-menu i{
+    
+    display:none;
+  } 
+  .nav-ing{
+    display:initial;
+  }
+  #page-header .logo {
+  width: 33%;
+  }
+  #page-header #top-header .search-form {
+  width: 33%;
+}
+#page-header #top-header p {
+  width: 33%;
+  text-align: center;
+  margin-top: 0px;
+}
+}
+
+@media (min-width: 769px) {
+  .product .description {
+    display: initial;
+  }
+
+  .product {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product {
+    width: 25%;
+  }
+  .description {
+    display: none;
+  }
+  .product .product-background {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .product:hover .truck-icon{
+    transform:rotate(360deg);
+  }
+  .product:hover .description{
+    color: #666;
+  }
+}
